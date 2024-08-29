@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>RAYCES Y ENCANTOS ARTESANALES</title>
+</head>
+<body class="inicio"> <!-- Aplica la clase "inicio" -->
+    <div class="container">
+        <header>
+            <img src="{% static 'images/logo.png' %}" alt="Logo">
+            <h1>RAYCES Y ENCANTOS ARTESANALES</h1>
+            <nav>
+                <a href="{% url 'index' %}">Inicio</a>
+                <a href="{% url 'reservas' %}">Reservas</a>
+                <a href="{% url 'acerca' %}">Acerca de</a>
+                <a href="{% url 'ubicacion' %}">Ubicación</a>
+            </nav>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Raices y Encantos Artesanales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

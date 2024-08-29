@@ -1,0 +1,360 @@
+/* body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3498db;
+} */
+header {
+    background-color: #ffffff;
+    color: #1b1b1b;
+    padding: 10px 0;
+    text-align: center;
+}
+header img {
+    width: 50px;
+    vertical-align: middle;
+}
+header h1 {
+    display: inline;
+    margin: 0;
+    vertical-align: middle;
+}
+main {
+    padding: 20px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Esto acomoda el pie de pagina statico (se modofica aqui y en las paginas */
+.container {
+    min-height: 100vh; /* Vista completa del viewport */
+    display: flex;
+    flex-direction: column;
+  }
+
+/* imagen de fondo  */
+
+body.inicio {
+    background-image: url("/static/images/pexels.jpg") !important;
+    background-size: cover; /* Cubre toda la página */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura del viewport */
+    height: 100%; /* Asegura que el cuerpo tenga la altura completa */
+}
+/*Coonfiguracion de texto de el inicio*/
+.inicio-container {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 12%;
+}
+
+.opciones-compra {
+    margin-top: 10px;
+}
+
+.opciones-compra .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.opciones-compra .btn:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* Opcional / static/styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.product-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta las columnas para adaptarse al contenedor */
+    grid-template-rows: repeat(auto-fit, minmax(250px, auto)); /* Ajusta las filas para mantener un tamaño mínimo */
+    gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+    padding: 20px;
+    max-width: 1200px; /* Establece un ancho máximo para que la cuadrícula no se estire demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra la cuadrícula horizontalmente */
+}
+
+/* Ajusta el diseño de los elementos dentro de la cuadrícula */
+.product-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, auto));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px; /* Añade un poco de padding para que el contenido no esté pegado a los bordes */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+.product-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    margin: 0;
+    padding: 0 10px;
+    color: #666;
+}
+
+.product-item .price {
+    font-size: 1.0em; /* Aumenta el tamaño del texto del precio */
+    color: #e74c3c; /* Rojo vibrante para destacar el precio */
+    font-weight: bold; /* Negrita para mayor énfasis */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase; /* Opcional, hace que el texto sea mayúsculas */
+    letter-spacing: 0px; /* Espacio entre letras para un estilo más moderno */
+}
+
+
+
+/*Centrado de catalogo*/
+.centro{
+    text-align: center;
+    color:#ffffff
+}
+
+
+/* Fondo de color sólido */
+.bg-solid-1 {
+    background-color: rgba(52, 152, 219, 0.5); /* Azul con 50% de transparencia */
+    min-height: 100vh;
+}
+
+.bg-solid-2 {
+    background-color: #e74c3c; /* Rojo */
+    min-height: 100vh;
+}
+
+/*De aqui en adelante son los estilos de las paginas decoracion y ropa*/
+
+.grid-container{
+    display: flex;
+    justify-content: center;
+    /*grid-template-columns: repeat(3, 1fr); Tres columnas de igual tamaño */
+    gap: 20px; /* Espacio entre los elementos */
+    padding: 20px;
+    flex-wrap: nowrap; /* Impide que los productos se envuelvan a la siguiente línea */
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    max-width: 250px; /* Establece un ancho máximo para cada tarjeta */
+    /*flex: 0 0 200px;  Asegura que cada tarjeta tenga un ancho fijo de 200px */
+}
+
+.product-card img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: auto;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/*Esto es para el forms*/
+
+/* Asegúrate de que el body tenga el fondo transparente y el color de texto en blanco para las secciones específicas */
+body.reservar {
+    background-color: rgba(52, 152, 219, 0.7); /* Azul con 70% de transparencia */
+    color: #0e0e0e; /* Texto blanco */
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo negro con 70% de opacidad */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar el contenedor */
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto y el contenido */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #0a0a0a; /* Texto blanco */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los campos del formulario */
+}
+
+button {
+    background-color: #115f8c; /* Fondo blanco para el botón */
+    color: #000000; /* Texto azul para el botón */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #f0f0f0; /* Fondo gris claro cuando se pasa el cursor sobre el botón */
+}
+
+
+/*Estilo para la ubicacion*/
+
+.location-container {
+    text-align: center; /* Centra el texto y el contenido dentro del contenedor */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con un poco de transparencia */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para darle profundidad */
+    max-width: 800px; /* Limita el ancho máximo para una mejor visualización */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.location-container h2, .location-container h3 {
+    color: #3498db; /* Color azul para los encabezados */
+}
+
+.location-container p {
+    color: #333; /* Texto gris oscuro para mejor legibilidad */
+    font-size: 16px;
+    line-height: 1.5; /* Mejora la legibilidad del texto */
+}
+
+#map iframe {
+    border: none; /* Elimina el borde del iframe */
+    border-radius: 8px; /* Bordes redondeados para el iframe */
+}
+
+/*Estilo para acerca de */
+
+/* Estilo para la sección "Acerca de Nosotros" */
+.about-us-container {
+    text-align: center; /* Centra el texto y el contenido dentro del contenedor */
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco para contrastar con el resto del diseño */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para darle profundidad */
+    max-width: 800px; /* Limita el ancho máximo para una mejor visualización */
+    margin: 20px auto; /* Centra el contenedor horizontalmente con un margen superior e inferior */
+}
+
+.about-us-container h2 {
+    color: #3498db; /* Color azul para el encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+.about-us-container p {
+    color: #333; /* Texto gris oscuro para mejor legibilidad */
+    font-size: 16px;
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+    margin: 0 0 20px; /* Espacio debajo de cada párrafo */
+}
+
+/*Pagina proximamente */
+
+/* Asegúrate de que estos estilos solo afectan la página "Próximamente" */
+
+.coming-soon-page {
+    background-color: rgba(52, 152, 219, 0.7); /* Azul de fondo */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinea el texto al centro */
+    font-family: Arial, sans-serif;
+}
+
+.coming-soon-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+    padding: 40px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para profundidad */
+}
+
+.coming-soon-container h1 {
+    font-size: 3em; /* Tamaño grande del texto */
+    margin: 0; /* Elimina el margen por defecto */
+    animation: bounce 1.5s infinite; /* Efecto de rebote */
+}
+
+.coming-soon-container p {
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    margin-top: 20px; /* Espacio arriba del párrafo */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}

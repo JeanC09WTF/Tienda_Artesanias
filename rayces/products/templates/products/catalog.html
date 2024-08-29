@@ -1,0 +1,23 @@
+<!-- products/templates/products/catalog.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="bg-solid-1">    
+    <div class="centro">
+        <h1>Catálogo de Productos</h1>
+    </div>
+    {% load static %}
+    <div class="product-catalog">
+        {% for product in products %}
+        <div class="product-item">
+            <a href="{% url 'product_detail' product.id %}">
+                <h2>{{ product.name }}</h2>
+                <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            </a>
+            <p>{{ product.description }}</p>
+            <p class="price">Precio: ${{ product.price }}</p>
+        </div>
+        {% endfor %}
+    </div>    
+</div>
+{% endblock %}

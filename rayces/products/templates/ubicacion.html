@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<article class="location-container">
+    <h2>Ubicación</h2>
+    <p>Nuestro taller y tienda están ubicados en la hermosa ciudad de XYZ. Ven a visitarnos y descubre nuestras colecciones artesanales en persona.</p>
+    <p>Dirección: Calle Falsa 123, XYZ</p>
+    <p>Teléfono: (123) 456-7890</p>
+    <div id="map">
+        <h3>Encuéntranos en el mapa:</h3>
+        <!-- Incrusta aquí un mapa interactivo de Google Maps -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354348901345!2d-122.41941568468199!3d37.77492927975986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818cd4a14b99%3A0x6974a0c9b3f72b8f!2sCalle%20Falsa%20123%2C%20XYZ!5e0!3m2!1ses!2ses!4v1616011677694!5m2!1ses!2ses"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+        ></iframe>
+    </div>
+</article>
+{% endblock %}

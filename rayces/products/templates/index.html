@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="inicio-container">
+    <h1>BIENVENIDOS</h1>
+    <p>Explore nuestros productos artesanales únicos y hechos a mano.</p>
+    <div class="opciones-compra">
+        <a href="{% url 'product_catalog' %}" class="btn">Catalogo</a>
+        <a href="{% url 'decoracion_prod' %}" class="btn">Decoración</a>
+        <a href="{% url 'ropa_pro' %}" class="btn">Ropa</a>
+        <!-- Agrega más categorías según sea necesario -->
+    </div>
+</div>
+{% endblock %}

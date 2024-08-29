@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="bg-solid-1">
+    <div class="centro">
+        <h1>Decoraciones Disponibles</h1>
+    </div>
+    <div class="grid-container">
+        <div class="product-card">
+            <!-- Se deben referenciar las imagenes cuando se trabja con Django -->
+            <img src="{% static 'images/imagen1.jpg' %}" alt="Producto 1">
+            <h3>Llavero de Sombrero</h3>
+            <p>¡Lleva un pedacito de Panamá contigo a donde vayas! Este llavero, elaborado artesanalmente, captura la esencia del sombrero pinta'o, un ícono de nuestra cultura. Cada detalle, desde la trenza hasta la cinta, es cuidadosamente trabajado a mano. Es más que un simple accesorio; es un símbolo de nuestra tradición y un regalo perfecto para los amantes de lo auténtico..</p>
+        </div>
+        <div class="product-card">
+            <img src="{% static 'images/imagen2.jpg' %}" alt="Producto 2">
+            <h3>Pintura en Tablas:</h3>
+            <p>Nuestras pinturas en tablas son obras de arte únicas, creadas por talentosos artistas panameños. Cada pieza es una representación de nuestra rica biodiversidad, nuestros paisajes y nuestra gente. Al adquirir una de estas pinturas, estás llevando a casa una obra maestra que refleja la pasión y el talento de nuestros artesanos.</p>
+        </div>
+        <div class="product-card">
+            <img src="{% static 'images/imagen3.jpg' %}" alt="Producto 3">
+            <h3>Campanas de Barro</h3>
+            <p>El sonido de Panamá en tu hogar. Estas campanas de barro, hechas a mano por artesanos locales, llenarán tu espacio con una melodía suave y relajante. Cada campana es única, con diseños inspirados en la naturaleza y la cultura panameña. Son el complemento perfecto para cualquier ambiente, ya sea en tu hogar, oficina o jardín.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
